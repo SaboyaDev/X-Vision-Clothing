@@ -38,39 +38,43 @@ class SignUp extends Component {
 			<div className='sign-up'>
 				<h2>I don't have an account</h2>
 				<span>Sign up with your email and password</span>
-				<FormInput
-					name='displayName'
-					type='displayName'
-					value={displayName}
-					handleChange={handleChange}
-					label='Display Name'
-					required
-				/>
-				<FormInput
-					name='email'
-					type='email'
-					value={email}
-					handleChange={handleChange}
-					label='Email'
-					required
-				/>
-				<FormInput
-					name='password'
-					type='password'
-					value={password}
-					handleChange={handleChange}
-					label='Password'
-					required
-				/>
-				<FormInput
-					name='confirmPassword'
-					type='password'
-					value={confirmPassword}
-					handleChange={handleChange}
-					label='Confirm Password'
-					required
-				/>
-				<CustomButton type='submit'>Sign Up</CustomButton>
+				<div className='formGroup'>
+					<FormInput
+						name='displayName'
+						type='displayName'
+						value={displayName}
+						handleChange={handleChange}
+						label='Display Name'
+						required
+					/>
+					<FormInput
+						name='email'
+						type='email'
+						value={email}
+						handleChange={handleChange}
+						label='Email'
+						required
+					/>
+					<FormInput
+						name='password'
+						type='password'
+						value={password}
+						handleChange={handleChange}
+						label='Password'
+						required
+					/>
+					<FormInput
+						name='confirmPassword'
+						type='password'
+						value={confirmPassword}
+						handleChange={handleChange}
+						label='Confirm Password'
+						required
+					/>
+				</div>
+				<div className='signUpBtn'>
+					<CustomButton type='submit'>Sign Up</CustomButton>
+				</div>
 			</div>
 		);
 	}

@@ -1,5 +1,16 @@
 .sign-up {
-	max-width: 17vw;
-	padding: 1rem 5rem;
-	margin: 0 2rem;
+	width: 34vw;
+	margin: 0 3rem;
+	padding: 2rem 4rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.formGroup {
+	margin: 3rem 0;
+}
+
+.signUpBtn {
+	text-align: center;
+	margin-bottom: 1.2rem;
 }
