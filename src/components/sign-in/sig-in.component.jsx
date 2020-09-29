@@ -31,14 +31,14 @@ class SignIn extends Component {
 		const { handleChange, handleSubmit } = this;
 		return (
 			<div className='sign-in'>
-				<h2>I already have an account</h2>
+				<h2 className='title'>I already have an account</h2>
 				<span>Sign in with your email and password</span>
-				<div className='formGroup'>
+				<div className='formGroup' onSubmit={handleSubmit}>
 					<FormInput
 						name='email'
 						type='email'
 						value={email}
-						handleChange={handleChange}
+						onChange={handleChange}
 						label='Email'
 						required
 					/>
@@ -46,7 +46,7 @@ class SignIn extends Component {
 						name='password'
 						type='password'
 						value={password}
-						handleChange={handleChange}
+						onChange={handleChange}
 						label='Password'
 						required
 					/>
@@ -54,7 +54,7 @@ class SignIn extends Component {
 				<div className='buttons'>
 					<CustomButton type='submit'>Sign In</CustomButton>
 					<CustomButton onClick={signInWithGoogle} isGoogleSignIn>
-						Sign In With Google
+						Google Sign In
 					</CustomButton>
 				</div>
 			</div>

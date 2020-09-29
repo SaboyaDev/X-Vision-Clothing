@@ -1,16 +1,17 @@
 .sign-in {
-	width: 34vw;
-	margin: 0 3rem;
-	padding: 2rem 4rem;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
+	width: 20vw;
+	// margin: 0 3rem;
+	// padding: 2rem 3rem;
+	// box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	// border-radius: 5px;
 }
 
 .formGroup {
-	margin: 3rem 0 4rem 0;
+	margin: 3rem 0;
 }
 
 .buttons {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
