@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './header.styles.scss';
-import { ReactComponent as Logo } from '../../assets/logo.svg';
+import './navbar.styles.scss';
+import { ReactComponent as Logo } from '../../assets/logox.svg';
+import { ReactComponent as ShoppingBag } from '../../assets/shopping-bag.svg';
 import { auth } from '../../firebase/firebase.utils';
 
-const Header = ({ currentUser }) => (
+const Navbar = ({ currentUser }) => (
 	<div className='header'>
 		<Link className='logo-container' to='/'>
 			<Logo className='logo' />
+			<p>Vision&trade;</p>
 		</Link>
 		<div className='options'>
 			<Link className='option' to='/'>
@@ -28,8 +30,9 @@ const Header = ({ currentUser }) => (
 					SIGN IN
 				</Link>
 			)}
+			<ShoppingBag className='shopping-icon' />
 		</div>
 	</div>
 );
 
-export default Header;
+export default Navbar;

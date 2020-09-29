@@ -1,16 +1,18 @@
 .sign-up {
 	width: 20vw;
-	// margin: 0 3rem;
+	margin: 4rem 5rem;
 	// padding: 2rem 3rem;
 	// box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	// border-radius: 5px;
+	background-color: white;
 }
 
 .sign-up-form {
 	margin: 3rem 0;
 }
 
-.signUpBtn {
-	// text-align: center;
-	margin-top: 3rem;
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }

@@ -2,7 +2,7 @@
 	min-width: 8rem;
 	// width: 4rem;
 	height: 50px;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.9px;
 	line-height: 50px;
 	padding: 0 1.5rem;
 	font-size: 13px;
@@ -10,7 +10,7 @@
 	color: white;
 	text-transform: uppercase;
 	font-family: 'Open Sans Condensed';
-	font-weight: bolder;
+	font-weight: 600;
 	border: none;
 	cursor: pointer;
 	margin-bottom: 2rem;
@@ -22,11 +22,11 @@
 	}
 
 	&.google-sign-in {
-		background-color: #4285f4;
+		background-color: #f7a102;
 		color: white;
 
 		&:hover {
-			background-color: #357ae8;
+			background-color: #d18903;
 			border: none;
 		}
 	}

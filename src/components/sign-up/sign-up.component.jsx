@@ -3,7 +3,11 @@ import './sign-up.styles.scss';
 
 import FormInput from '../form-input/form-input.component';
 import { CustomButton } from '../custom-button/custom-button.component';
-import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
+import {
+	auth,
+	createUserProfileDocument,
+	signInWithGoogle,
+} from '../../firebase/firebase.utils';
 
 class SignUp extends Component {
 	constructor(props) {
@@ -57,7 +61,7 @@ class SignUp extends Component {
 						name='displayName'
 						type='displayName'
 						value={displayName}
-						onChange={handleChange}
+						handleChange={handleChange}
 						label='Display Name'
 						required
 					/>
@@ -65,7 +69,7 @@ class SignUp extends Component {
 						name='email'
 						type='email'
 						value={email}
-						onChange={handleChange}
+						handleChange={handleChange}
 						label='Email'
 						required
 					/>
@@ -73,7 +77,7 @@ class SignUp extends Component {
 						name='password'
 						type='password'
 						value={password}
-						onChange={handleChange}
+						handleChange={handleChange}
 						label='Password'
 						required
 					/>
@@ -81,12 +85,15 @@ class SignUp extends Component {
 						name='confirmPassword'
 						type='password'
 						value={confirmPassword}
-						onChange={handleChange}
+						handleChange={handleChange}
 						label='Confirm Password'
 						required
 					/>
-					<div className='signUpBtn'>
+					<div className='buttons'>
 						<CustomButton type='submit'>Sign Up</CustomButton>
+						<CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+							Gmail Sign Up
+						</CustomButton>
 					</div>
 				</form>
 			</div>
