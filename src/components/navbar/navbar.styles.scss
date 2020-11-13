@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 .header {
-	// position: sticky;
+	position: absolute;
 	height: 70px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	// margin-bottom: 3rem;
 	padding: 3rem 5rem;
-	background-color: black;
-	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 10;
 
 	& a {
-		color: white;
+		color: black;
+	}
+
+	&.scroll {
+		background-color: black;
+		position: fixed;
+
+		a {
+			color: white;
+		}
 	}
 
 	.logo-container {
@@ -47,18 +56,26 @@
 			cursor: pointer;
 
 			&:hover {
-				color: #fb7823;
+				color: #f74e21;
 			}
 		}
 	}
-	.shopping-icon {
-		width: 24px;
-		height: 24px;
-		margin: 15px;
-		cursor: pointer;
+}
 
-		&:hover {
-			color: #fb7823;
-		}
+.shopping-icon {
+	width: 24px;
+	height: 24px;
+	margin: 15px;
+	cursor: pointer;
+
+	&.lightBg {
+		fill: black;
+		stroke: black;
+		stroke-width: 5;
+	}
+
+	&.darkBg {
+		fill: white;
+		stroke: white;
 	}
 }

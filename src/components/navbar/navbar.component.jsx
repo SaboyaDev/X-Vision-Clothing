@@ -30,7 +30,7 @@ const Navbar = ({ currentUser }) => (
 					SIGN IN
 				</Link>
 			)}
-			<ShoppingBag className='shopping-icon' />
+			<ShoppingBag className='shopping-icon lightBg' />
 		</div>
 	</div>
 );

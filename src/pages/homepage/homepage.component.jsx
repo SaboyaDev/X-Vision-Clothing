@@ -1,10 +1,12 @@
 import React from 'react';
-import Directory from '../../components/directory/directory.component';
 import './homepage.styles.scss';
+
+import Hero from '../../components/hero/hero.component';
+import Directory from '../../components/directory/directory.component';
 
 const HomePage = () => (
 	<div className='homepage'>
-		<div className='hero-section'>{/* <h1>Hero</h1> */}</div>
+		<Hero />
 		<Directory />
 	</div>
 );

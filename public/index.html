@@ -39,6 +39,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onscroll = () => {
+        const nav = document.querySelector('.header');
+        const shopping_icon = document.querySelector('#Capa_1')
+        window.scrollY <= 275 ? (
+          nav.className = 'header',
+          shopping_icon.classList = 'shopping-icon lightBg'
+        )
+          : (
+            nav.className = 'header scroll',
+            shopping_icon.classList = 'shopping-icon darkBg'
+          );
+      };
+    </script>
   </body>
 
 </html>
