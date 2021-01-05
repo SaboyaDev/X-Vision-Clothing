@@ -4,6 +4,7 @@ import './navbar.styles.scss';
 import { ReactComponent as Logo } from '../../assets/logox.svg';
 import { ReactComponent as ShoppingBag } from '../../assets/shopping-bag.svg';
 import { auth } from '../../firebase/firebase.utils';
+import { connect } from 'react-redux';
 
 const Navbar = ({ currentUser }) => (
 	<div className='header'>
@@ -35,4 +36,8 @@ const Navbar = ({ currentUser }) => (
 	</div>
 );
 
-export default Navbar;
+const mapStateToProps = ({ user }) => ({
+	currentUser: user.currentUser,
+});
+
+export default connect(mapStateToProps)(Navbar);
