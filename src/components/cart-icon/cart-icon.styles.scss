@@ -1,0 +1,38 @@
+.cart-icon {
+	// width: 45px; casues to be disalign with the dropdown
+	height: 45px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	.shopping-icon {
+		width: 24px;
+		height: 24px;
+
+		&.lightBg {
+			fill: black;
+			stroke: black;
+			stroke-width: 5;
+		}
+
+		&.darkBg {
+			fill: white;
+			stroke: white;
+			stroke-width: 5;
+		}
+	}
+
+	.item-count {
+		position: absolute;
+		font-size: 12px;
+		// font-weight: bold;
+		bottom: 10px;
+		color: black;
+
+		&.dark {
+			color: white;
+		}
+	}
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './sign-up.styles.scss';
 
 import FormInput from '../form-input/form-input.component';
-import { CustomButton } from '../custom-button/custom-button.component';
+import CustomButton from '../custom-button/custom-button.component';
 import {
 	auth,
 	createUserProfileDocument,
@@ -20,7 +20,7 @@ class SignUp extends Component {
 		};
 	}
 
-	handleSubmit = async (event) => {
+	handleSubmit = async event => {
 		event.preventDefault();
 		const { displayName, email, password, confirmPassword } = this.state;
 		if (password !== confirmPassword) {
@@ -44,7 +44,7 @@ class SignUp extends Component {
 		}
 	};
 
-	handleChange = (event) => {
+	handleChange = event => {
 		const { value, name } = event.target;
 		this.setState({ [name]: value });
 	};

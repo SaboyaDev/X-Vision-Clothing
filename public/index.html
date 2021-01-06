@@ -45,11 +45,14 @@
 			window.onscroll = () => {
 				const nav = document.querySelector('.header');
 				const shopping_icon = document.querySelector('#Capa_1');
-				window.scrollY <= 275
+				const item_count = document.querySelector('.item-count');
+				window.scrollY <= 375
 					? ((nav.className = 'header'),
-					  (shopping_icon.classList = 'shopping-icon lightBg'))
+					  (shopping_icon.classList = 'shopping-icon lightBg'),
+					  (item_count.classList = 'item-count'))
 					: ((nav.className = 'header scroll'),
-					  (shopping_icon.classList = 'shopping-icon darkBg'));
+					  (shopping_icon.classList = 'shopping-icon darkBg'),
+					  (item_count.classList = 'item-count dark'));
 			};
 		</script>
 	</body>

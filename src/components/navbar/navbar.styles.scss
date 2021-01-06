@@ -2,80 +2,72 @@
 
 .header {
 	position: absolute;
-	height: 70px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	// margin-bottom: 3rem;
-	padding: 3rem 5rem;
-	background-color: rgba(0, 0, 0, 0);
+	width: 100vw;
+	color: black;
 	z-index: 10;
-
-	& a {
-		color: black;
-	}
 
 	&.scroll {
 		background-color: black;
 		position: fixed;
 
-		a {
+		p,
+		.option {
 			color: white;
 		}
 	}
 
-	.logo-container {
-		height: 100%;
-		width: 12rem;
-		// padding: 25px;
+	.header-container {
+		margin: auto;
+		max-width: 1200px;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		flex-direction: column;
+		align-items: flex-end;
 
-		.logo {
-			width: 50px;
-			height: 50px;
-		}
+		padding: 1rem 10px;
+		background-color: rgba(0, 0, 0, 0);
 
-		p {
-			margin: 0 0.5rem;
-			// font-family: 'Berkshire sSwash', cursive;
-			letter-spacing: 5px;
-		}
-	}
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			max-width: 1200px;
+			width: 100%;
 
-	.options {
-		width: 50%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
+			.logo-container {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
-		.option {
-			padding: 10px 15px;
-			cursor: pointer;
+				.logo {
+					width: 50px;
+					height: 50px;
+				}
 
-			&:hover {
-				color: #f74e21;
+				p {
+					font-weight: 700;
+					margin: 0 0.5rem;
+					letter-spacing: 5px;
+				}
+			}
+
+			.options {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+
+				.option {
+					// font-weight: 700;
+					padding: 10px 15px;
+					cursor: pointer;
+
+					&:hover {
+						color: #f74e21;
+						text-decoration: none;
+					}
+				}
 			}
 		}
-	}
-}
-
-.shopping-icon {
-	width: 24px;
-	height: 24px;
-	margin: 15px;
-	cursor: pointer;
-
-	&.lightBg {
-		fill: black;
-		stroke: black;
-		stroke-width: 5;
-	}
-
-	&.darkBg {
-		fill: white;
-		stroke: white;
 	}
 }
