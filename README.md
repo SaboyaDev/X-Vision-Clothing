@@ -1,5 +1,5 @@
 # X-Vision Clothing (Demo)
 
-![preview](https://personal-portfolio-2020.s3.amazonaws.com/crwnStore.gif)
+https://user-images.githubusercontent.com/16430662/150600449-9cb51ee1-e520-4700-800c-6a63459e1a16.mp4
 
 ## Coming Soon 2022...
