@@ -1,7 +1,6 @@
-import React from 'react';
-import './hero.styles.scss';
+import './hero.styles.scss'
 
 function Hero() {
-	return <div className='hero-section'></div>;
+	return <div className='hero-section'></div>
 }
-export default Hero;
+export default Hero

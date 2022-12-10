@@ -1,9 +1,11 @@
 import { useState } from 'react'
 
 import FormInput from '../form-input/form-input.component'
+import CustomButton from '../custom-button/custom-button.component'
 // import Button from '../button/button.component'
 
 import {
+	signInWithGoogleRedirect,
 	signInWithGooglePopup,
 	createUserDocumentFromAuth,
 	signInAuthUserWithEmailAndPassword,
@@ -57,10 +59,13 @@ const SignInForm = () => {
 	}
 
 	return (
-		<div className='sign-up-container'>
+		<div className='sign-in'>
 			<h2>Already have an account?</h2>
 			<span>Sign in with your email and password</span>
-			<form onSubmit={handleSubmit}>
+			<form
+				className='formGroup'
+				onSubmit={handleSubmit}
+			>
 				<FormInput
 					label='Email'
 					type='email'
@@ -78,16 +83,16 @@ const SignInForm = () => {
 					name='password'
 					value={password}
 				/>
-				{/* <div className='buttons-container'>
-					<Button type='submit'>Sign In</Button>
-					<Button
+				<div className='buttons'>
+					<CustomButton type='submit'>Sign In</CustomButton>
+					<CustomButton
 						type='button'
-						buttonType='google'
 						onClick={signInWithGoogle}
+						isGoogleSignIn
 					>
 						Google sign in
-					</Button>
-				</div> */}
+					</CustomButton>
+				</div>
 			</form>
 		</div>
 	)

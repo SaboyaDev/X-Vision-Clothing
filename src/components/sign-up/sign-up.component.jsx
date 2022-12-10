@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import './sign-up.styles.scss';
-
+import {useState} from 'react'
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+import './sign-up.styles.scss';
+
 import {
 	auth,
 	createUserProfileDocument,
 	signInWithGoogle,
 } from '../../firebase/firebase.utils';
 
-class SignUp extends Component {
-	constructor(props) {
-		super();
-		this.state = {
+const defaultFormFields = {
 			displayName: '',
 			email: '',
 			password: '',
 			confirmPassword: '',
-		};
-	}
+};
+    
+const SignUp = () => {
+	
+  const [formFields, setFormFields] = useState(defaultFormFields)
 
 	handleSubmit = async event => {
 		event.preventDefault();
